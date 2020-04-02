@@ -16,8 +16,8 @@ class first:
         self.window = tk.Tk()
         self.window.geometry('800x500')
         self.window.title('Sked Dualer')
-        bgColor='#111'
-        self.window.configure(bg='#111')
+        bgColor='#fff'
+        self.window.configure(bg='#fff')
         
         filePath = "img/logotemp1.png"
         logo = tk.PhotoImage(file=filePath)
@@ -29,12 +29,12 @@ class first:
         lbl.config(text = string)
         # lbl.after(1000)
 
-        tk.Label(self.window, text="The only software", font=("Arial",12), background=bgColor, foreground='#fff').place(x=600,y=150)
-        tk.Label(self.window, text="you need to", font=("Arial",12), background=bgColor, foreground='#fff').place(x=622,y=175)
-        tk.Label(self.window, text="keep track of", font=("Arial",12), background=bgColor, foreground='#fff').place(x=617,y=200)
-        tk.Label(self.window, text="your day.", font=("Arial",12), background=bgColor, foreground='#fff').place(x=630,y=225)
-        tk.Label(self.window, text="Select the date", font=("Arial",12), background=bgColor, foreground='#fff').place(x=605,y=250)
-        tk.Label(self.window, text="and start scheduling.", font=("Arial",12), background=bgColor, foreground='#fff').place(x=592,y=275)
+        tk.Label(self.window, text="The only software", font=("Arial",12), background=bgColor, foreground='#111').place(x=600,y=150)
+        tk.Label(self.window, text="you need to", font=("Arial",12), background=bgColor, foreground='#111').place(x=622,y=175)
+        tk.Label(self.window, text="keep track of", font=("Arial",12), background=bgColor, foreground='#111').place(x=617,y=200)
+        tk.Label(self.window, text="your day.", font=("Arial",12), background=bgColor, foreground='#111').place(x=630,y=225)
+        tk.Label(self.window, text="Select the date", font=("Arial",12), background=bgColor, foreground='#111').place(x=605,y=250)
+        tk.Label(self.window, text="and start scheduling.", font=("Arial",12), background=bgColor, foreground='#111').place(x=592,y=275)
         
         tk.Button(self.window, text="Start scheduling!", font=("Arial", 14), bd=0, activebackground='#0E6F00', activeforeground=bgColor, fg=bgColor, background='#15AD00', command=self.start).place(x=50,y=400,height=50,width=500)
         
